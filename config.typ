@@ -21,7 +21,7 @@
     [Ciallo～(∠・ω< )⌒☆],
   ),
   footer-elements: (
-    "© 2026 Yousa-Mirage",
+    "© 2026 yjcui",
     [Powered by #link("https://github.com/Yousa-Mirage/Tufted-Blog-Template")[Tufted-Blog-Template]],
   ),
 )
