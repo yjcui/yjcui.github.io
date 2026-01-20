@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changelog</title>
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tufte-css/1.8.0/tufte.min.css">
+    <link rel="stylesheet" href="/assets/tufted.css">
+    <link rel="stylesheet" href="/assets/theme.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+    <script src="/assets/code-blocks.js">
+    </script>
+    <script src="/assets/format-headings.js">
+    </script>
+    <script src="/assets/theme-toggle.js">
+    </script>
+  </head>
+  <body>
+    <header class="site-header">你好<br>Ciallo～(∠・ω&lt; )⌒☆</header>
+    <header>
+      <nav><a href="/">Home</a><a href="/Docs/">Docs</a><a href="/Blog/">Blog</a><a href="/CV/">CV</a><a href="/Changelog/">Changelog</a></nav>
+    </header>
+    <article>
+      <section>
+        <h2>更新日志 / Changelog</h2>
+        <h3>Develop</h3>
+        <p>开发中的更新内容将在此记录。</p>
+        <ul>
+          <li>将 GitHub Actions 工作流由 Makefile 迁移至 uv</li>
+          <li>微调了切换按钮的位置，增加了距右侧边缘的距离</li>
+          <li>修复了链接下划线可能粗细不一致的问题</li>
+        </ul>
+        <h3>v0.3.0</h3>
+        <h4>优化</h4>
+        <ul>
+          <li>深色模式升级：添加了美观的浅色/深色模式切换按钮，并彻底优化了深色模式下的显示效果</li>
+          <li>为超长公式块添加了横向滚动条，支持滑动查看完整公式</li>
+          <li>优化了代码块的横向滚动条体验</li>
+        </ul>
+        <h4>重构</h4>
+        <ul>
+          <li>脚本合并：合并了 <code>assets/copy-code.js</code> 和 <code>assets/line-numbers.js</code>，统一为单个脚本 <code>assets/code-blocks.js</code></li>
+          <li>样式整合：清理了 CSS 文件结构，将 <code>assets/custom.css</code> 中的自定义样式完全整合至 <code>assets/tufted.css</code> 中，保持 <code>assets/custom.css</code> 空白</li>
+        </ul>
+        <h3>v0.2.0</h3>
+        <h4>新功能与重构</h4>
+        <ul>
+          <li>将 <a href="https://github.com/vsheg/tufted"><code>tufted</code></a> 的源代码直接集成进项目</li>
+          <li>使用 <code>#html.script()</code> 嵌入 js 脚本，从而支持方便的脚本扩展 (<a href="https://github.com/batkiz">@batkiz</a>)</li>
+          <li>支持了自定义网站 header 和 footer 元素，可访问 <a href="https://tufted-blog.pages.dev/">示例网站</a> 查看效果 (<a href="https://github.com/batkiz">@batkiz</a>)</li>
+          <li>添加了交叉引用跳转功能</li>
+        </ul>
+        <h4>优化与修复</h4>
+        <ul>
+          <li>优化了表格边框样式，现在会生成美观的 HTML 表格，可访问 <a href="https://tufted-blog.pages.dev/Docs/typst-example/#tbl1">示例网站</a> 查看效果</li>
+          <li>优化了块级公式的显示效果</li>
+          <li>修复了 FireFox 下公式显示异常的问题</li>
+          <li>使 footer 始终位于页面底部</li>
+        </ul>
+        <h3>v0.1.1</h3>
+        <ul>
+          <li>优化深色模式效果</li>
+        </ul>
+        <h3>v0.1.0</h3>
+        <p>初次发布</p>
+      </section>
+    </article>
+    <footer>© 2026 Yousa-Mirage<br>Powered by <a href="https://github.com/Yousa-Mirage/Tufted-Blog-Template">Tufted-Blog-Template</a></footer>
+  </body>
+</html>
